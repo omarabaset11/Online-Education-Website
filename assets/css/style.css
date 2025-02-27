@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+body{
+    background-color: var(--black);
+}
+:root {
+    --green: #00E77F;
+    --white: #fff;
+    --light-white: #c4c2c2;
+    --black: #0f0f0f;
+    --light-bg: #1b1b1b;
+}
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--light-bg);
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    margin: 0 10px;
+    color: var(--light-white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+ul li a:hover{
+    color: var(--green);
+}
+.title{
+    color: var(--green);
+    font-family: "rubik Distressed";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.first-section .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.laptop{
+    width: 600px;
+    margin-left: 50px;
+}
+.online{
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 100px;
+    position: relative;
+}
+.online span{
+    color: var(--green);
+    font-family: "rubik Distressed";
+    font-weight: 400;   
+}
+.contact-us{
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    background-color: var(--light-bg);
+    position: absolute;
+    bottom: 394px;
+    left: 600px;
+    transition: all 0.3s ease-in-out;
+}
+.contact-us:hover{
+    background-color: var(--white);
+}
+.contact-us a{
+    color: white;
+}
+.contact-us:hover a{
+    color: var(--black);
+}
+.cards{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.card{
+    background-color: var(--light-bg);
+    color: white;
+    width: 300px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    gap: 1.5rem;
+}
+.card i{
+    color: #00E77F;
+    font-size: 3rem;
+}
+.card .content p{
+    color: var(--light-white);
+    margin-top: 5px;
+}
