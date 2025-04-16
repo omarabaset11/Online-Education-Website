@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 *::selection{
     background-color: var(--white);
     color: var(--black);
 }
 body{
-    background-color: var(--black);
+    min-height: 100vh;
+    background-image: url(/my-project/assets/images/sl_0210121_40570_43.jpg);
+    background-size: cover;
+    background-position:center;
 }
+
 :root {
     --green: #00E77F;
     --white: #fff;
@@ -28,9 +33,13 @@ header{
     align-items: center;
     padding: 20px 10%;
     background-color: var(--light-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
-ul li{
-    display: inline-block;
+header ul {
+    display: flex;
+    gap: 1rem;
 }
 ul li a{
     margin: 0 10px;
@@ -44,7 +53,7 @@ ul li a:hover{
 }
 .title{
     color: var(--green);
-    font-family: "rubik Distressed";
+    font-family: "Rubik Mono One", monospace;
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
@@ -54,11 +63,11 @@ section {
     margin: 0 auto;
     padding: 2rem;
 }
+
 .first-section .content{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center; 
 }
 .laptop{
     width: 600px;
@@ -73,10 +82,11 @@ section {
 }
 .online span{
     color: var(--green);
-    font-family: "rubik Distressed";
-    font-weight: 400;   
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400; 
+    font-size: 70px;  
 }
-.contact-us{
+.btn-1{
     width: 120px;
     padding: 10px;
     border-radius: 20px;
@@ -87,15 +97,13 @@ section {
     bottom: 394px;
     left: 600px;
     transition: all 0.3s ease-in-out;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
-.contact-us:hover{
+.btn-1:hover{
     background-color: var(--white);
-}
-.contact-us a{
-    color: white;
-}
-.contact-us:hover a{
-    color: var(--black);
+    color: var(--light-bg);
 }
 .cards{
     display: flex;
@@ -121,4 +129,298 @@ section {
 .card .content p{
     color: var(--light-white);
     margin-top: 5px;
+}
+.third-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about__img {
+    width: 600px;
+}
+.about__title {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    text-align: center;
+}
+.about__content {
+    color: var(--light-white);
+    padding: 1rem 0;
+    line-height: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-2{
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    background-color: var(--light-bg);
+    transition: all 0.3s ease-in-out;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    left: 1200px;
+    margin-top: 20px;
+}
+.btn-2:hover{
+    background-color: var(--white);
+    color: var(--light-bg);
+}
+.fourth-section h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.fourth-section span{
+    color: var(--green);
+}
+.fourth-section .content {
+    display: flex;
+    gap: 1.5rem;
+}
+.panner {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: .5rem;
+}
+.panner img {
+    width: 100%;
+    height: 25rem;
+}
+.write h2 {
+    margin-bottom: 30px;
+}
+.write p {
+    color: var(--light-white);
+    letter-spacing: 1px;
+    line-height: 2;
+}
+.fifth-section h1{
+    color: var(--white);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fifth-section h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--green);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+.fifth-section h1 span {
+    color: white;
+}
+.fifth-section img {
+    border-radius: 0.5rem;
+    margin: 0 1.6px;
+    cursor: pointer;
+
+}
+.fifth-section img:hover::after {
+    content: '';
+    background-color: #00E77F;
+    z-index: 1;
+}
+.name {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.comment {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: .5rem;
+}
+.sixth-section h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--green);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+.sixth-section h1 span {
+    color: white;
+}
+.sixth-section .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.comment img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+.comment .user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.user h3 {
+    align-self: center;
+}
+.comment p {
+    line-height: 2;
+    text-align: left;
+    color: #c4c2c2;
+    font-weight: bold;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.stars i {
+    margin-top: 5px;
+    color: #00E77F;
+    margin: 5px 1px;
+}
+.contact {
+    text-align: left;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+}
+.contact h1 {
+    color: white;
+    text-align: center;
+}
+.contact h1 span {
+    color: var(--green);
+}
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact .row .image {
+    flex: 1 1 20rem;
+    margin-right: 5rem;
+}
+.contact .row .image img {
+    width: 100%;
+}
+.contact .row form {
+    flex: 1 1 20rem;
+}
+.contact .row form .box {
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: 1rem;
+    text-transform: none;
+    border: none;
+}
+.contact .row form span {
+    font-size: 1.2rem;
+    color: var(--light-white);
+    text-transform: none;
+}
+.contact .row form .radio {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.contact .row form .radio label {
+    font-size: 1.5rem;
+    color: var(--light-white);
+    margin-left: .5rem;
+    cursor: pointer;
+    text-transform: none;
+}
+.contact .row form .radio #female {
+    margin-left: 2rem;
+}
+.contact .row form .radio input {
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--light-white);
+    cursor: pointer;
+}
+.contact .row form .radio input:checked {
+    background-color: var(--green);
+    border-radius: 5rem;
+}
+.contact .row form .radio #male:checked~label[for="male"] {
+    color: var(--green);
+}
+.contact .row form .radio #female:checked~label[for="female"] {
+    color: var(--green);
+}
+.btn {
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+    background-color: var(--light-bg);
+    transition: all 0.3s ease-in-out;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.btn:hover{
+    background-color: var(--white);
+    color: var(--light-bg);
+    cursor: pointer;
+}
+footer {
+    background-color: var(--light-bg);
+}
+.share {
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.share a {
+    background-color: #0f0f0f;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.share a:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+.end {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.end span {
+    color: #00E77F;
 }

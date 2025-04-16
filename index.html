@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>project</title>
+    <title>Online Education</title>
 </head>
 <body>
     <header>
         <h2 class="title">Education</h2>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Teachers</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#teachers">Teachers</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="first-section">
+    <section class="first-section" id="home">
         <div class="content">
             <h2 class="online">Online <br><span>Education</span></h2>
         <img src="assets/images/homg-img.svg" alt="" class="laptop">
         </div>
-        <button class="contact-us"><a href="#">Contact Us</a></button>
+        <a href="#contact" class="btn-1">Contact Us</a>
     </section>
     <section class="second-section">
         <div class="cards">
@@ -59,5 +59,174 @@
             </div>
         </div>
     </section>
+    <section class="third-section" id="about">
+        <img src="assets/images/about-img.svg" alt="about"class ="about__img">
+        <div class="content">
+            <h3 class="about__title">Why Choose Us?</h3>
+            <p class="about__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates fugit dolores possimus modi aperiam necessitatibus vitae libero consequatur laborum amet!</p>
+            <a href="#contact" class="btn-2">Contact Us</a>
+        </div>
+    </section>
+    <section class="fourth-section" id="courses">
+        <h1>OUR <span>COURSES</span></h1>
+        <div class="content">
+            <div class="panner panner-1">
+                <img src="assets/images/course-6.svg" alt="">
+                <div class="write">
+                    <h2>Engineering</h2>
+                    <p>Explore the Principles Of Engineering And Practical Applications in Various Fields Of Study.</p>
+                </div>           
+            </div>
+            <div class="panner panner-2">
+                <img src="assets/images/course-1.svg" alt="">
+                <div class="write">
+                    <h2>Web Development</h2>
+                    <p>Explore The World Of Web Development With Hands On Projects And Expert Guidance.</p>
+                </div>
+            </div>
+            <div class="panner panner-3">
+                <img src="assets/images/course-2.svg" alt="">
+                <div class="write">
+                    <h2>Digital Marketing</h2>
+                    <p>Master Digital Marketing Strategies To Enhance Brand Visibility And Engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fifth-section" id="teachers">
+        <h1>EXPERT<span> TUTORS</span></h1>
+        <div class="images">
+            <img src="assets/images/tutor-5.png" alt="">
+            <img src="assets/images/tutor-1.png" alt="">
+            <img src="assets/images/tutor-6.png" alt="">
+        </div>
+        <div class="name">
+            <h3>Noah Thompson</h3>
+            <h3>Alexander Bennet</h3>
+            <h3>Olivia Garcia</h3>
+        </div>
+    </section>
+    <section class="sixth-section" id="reviews">
+        <h1>STUDENT'S <span> REVIEWS</span></h1>
+        <div class="content">
+            <div class="comment comment-1">
+                <p>
+                    This course has helped me gain valuable insights into front-end
+                    development. The instructors are knowledgeable and supportive,
+                    making learning enjoyable and effective.
+                </p>
+                <div class="flex">
+                    <div class="user-image">
+                        <img src="assets/images/pic-1.png" alt="">
+                    </div>
+                    <div class="stars">
+                        <h3>Omar Ashraf</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comment comment-2">
+                <p>
+                    I am impressed by the quality of instruction and the interactive
+                    learning experience provided by this course. It has been
+                    instrumental in advancing my career in web development.
+                </p>
+                <div class="flex">
+                    <div class="user-image">
+                        <img src="assets/images/pic-3.png" alt="">
+                    </div>
+                    <div class="stars">
+                        <h3>John Smith</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comment comment-3">
+                <p>   
+                    The course content is well-structured and practical. It has
+                    greatly enhanced my skills in front-end development, allowing me
+                    to tackle real-world projects confidently.
+                </p>
+                <div class="flex">
+                    <div class="user-image">
+                        <img src="assets/images/pic-2.png" alt="">
+                    </div>
+                    <div class="stars">
+                        <h3>Jessica Miller</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact" id="contact">
+        <h1 class="heading"><span>contact</span>us</h1>
+        <div class="row">
+            <div class="image">
+            <img src="./assets/images/contact-img.svg" alt="" />
+            </div>
+            <form action="" method="post">
+            <span>Your Name</span
+            ><input
+                type="text"
+                required
+                placeholder="Enter Your Full Name"
+                maxlength="50"
+                name="name"
+                class="box"
+            /><span>Your Email</span
+            ><input
+                type="email"
+                required
+                placeholder="Enter Your Valid Email"
+                maxlength="50"
+                name="email"
+                class="box"
+            /><span>Your Number</span
+            ><input
+                type="number"
+                required
+                placeholder="Enter Your Valid Phone Number"
+                max="9999999999"
+                min="0"
+                name="number"
+                class="box"
+                onkeypress="if(this.value.length==10) return false;"
+            /><span>Select Course</span>
+            <select name="couses" class="box" required>
+                <option value="" disabled selected>Select Course --</option>
+                <option value="engineering">Engineering</option>
+                <option value="web developement">Web developement</option>
+                <option value="digital marketing">Digital Marketing</option>
+            </select>
+            <span>Select Gender</span>
+            <div class="radio">
+                <input type="radio" name="gender" value="male" id="male" /><label
+                for="male"
+                >Male</label
+                ><input
+                type="radio"
+                name="gender"
+                value="female"
+                id="female"
+                /><label for="female">Female</label>
+            </div>
+            <input type="submit" value="Send Message" class="btn" name="send" />
+            </form>
+        </div>
+        </section>
+        <footer class="footer">
+            <section>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </div>
+                <hr>
+                <h2 class="end">Project Done By <span>Omar Ashraf</span></h2>
+            </section>
+        </footer>
 </body>
 </html>
