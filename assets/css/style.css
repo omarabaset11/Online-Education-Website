@@ -11,7 +11,7 @@
 }
 body{
     min-height: 100vh;
-    background-image: url(/Online-Education-Website/assets/images/sl_0210121_40570_43.jpg);
+    background-image: url(/assets/images/sl_0210121_40570_43.jpg);
     background-size: cover;
     background-position:center;
 }
@@ -423,4 +423,137 @@ footer {
 }
 .end span {
     color: #00E77F;
+}
+
+/* ========== Responsive Design ========== */
+
+@media (max-width: 1024px) {
+  .first-section .content,
+  .third-section,
+  .sixth-section .content,
+  .contact .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .laptop,
+  .about__img,
+  .contact .row .image {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn-1,
+  .btn-2 {
+    position: static;
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  .online {
+    font-size: 60px;
+  }
+
+  .online span {
+    font-size: 40px;
+  }
+
+  .cards,
+  .fourth-section .content,
+  .sixth-section .content {
+    flex-direction: column;
+  }
+
+  .card,
+  .panner {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .panner img {
+    height: auto;
+  }
+
+  .contact .row form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .comment .user {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  ul li a {
+    font-size: 18px;
+  }
+
+  .online {
+    font-size: 40px;
+  }
+
+  .online span {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .fourth-section h1,
+  .fifth-section h1,
+  .sixth-section h1,
+  .contact h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-1,
+  .btn-2,
+  .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .online {
+    font-size: 30px;
+  }
+
+  .online span {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .write h2 {
+    font-size: 1.5rem;
+  }
+
+  .write p,
+  .comment p {
+    font-size: 0.9rem;
+  }
+
+  .contact {
+    font-size: 2rem;
+  }
+
+  .contact .row .image {
+    margin-right: 0;
+  }
 }
